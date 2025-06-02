@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
 import Header from "./components/layout/Header"
-import Footer from "./components/layout/Header"
 import './globals.css'
 
 // All packages except `@mantine/hooks` require styles imports
@@ -11,6 +10,7 @@ import {
     MantineProvider,
     mantineHtmlProps,
 } from '@mantine/core'
+import Footer from './components/layout/Footer'
 
 const geistSans = Geist({
     variable: '--font-geist-sans',

@@ -1,10 +1,11 @@
 import { Image } from '@mantine/core'
 import React from 'react'
 import Partiaire from '../display/Partiaire'
+import Button from '../Button'
 
 function Hero() {
   return (
-    <div className='w-full pt-[100px] ' >
+    <div className='w-full pt-[100px] md:pt-[170px] ' >
       <div className='w-full grid grid-cols-1 lg:grid-cols-2 gap-10 pb-10' >
 
         {/* left side  */}
@@ -18,7 +19,10 @@ function Hero() {
           <p>
             Notre mission est de vous fournir les outils nécessaires pour votre réussite. Depuis sa création en 2017, l&apos;entreprise AGN s&apos;engage à accompagner les entrepreneurs et investisseurs dans la réalisation de leurs projets, en offrant une expertise reconnue et des services adaptés aux défis économiques actuels.
           </p>
-          <div> button part </div>
+          <div className='flex w-full gap-6 mg:gap-10' >
+            <Button label='Historique' variant='ghost-primary' />
+            <Button label='Contact' variant='primary' />
+          </div>
         </div>
 
         {/* right side  */}
