@@ -5,7 +5,7 @@ import Container from "../common/Container"
 import Link from "next/link"
 import Button from "../common/Button"
 import Menu from "../display/Menu"
-import Logo from "../icons/Logo"
+import Logo from '../icons/Logo'
 import { useState } from "react"
 
 function Header() {
