@@ -1,7 +1,7 @@
 import { Image } from '@mantine/core'
 import React from 'react'
-import Partiaire from '../display/Partiaire'
-import Button from '../Button'
+import Partiaire from '../../display/Partiaire'
+import Button from '../../Button'
 
 function Hero() {
   return (
@@ -27,7 +27,7 @@ function Hero() {
 
         {/* right side  */}
         <Image
-          src={'/image/home-hero.png'}
+          src={'/image/home/home-hero.png'}
           alt='hero image'
           className='w-full h-auto'
         />

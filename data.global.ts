@@ -1,4 +1,4 @@
-import { HeaderLinkType } from './type'
+import { HeaderLinkType, HomeCardPropsType } from './type'
 
 export const headerLinkData: HeaderLinkType[] = [
     {
@@ -54,5 +54,29 @@ export const footerSecondaryLinksData: HeaderLinkType[] = [
     {
         title: 'E--Commerce',
         url: '/ecommerce',
+    },
+]
+
+export const homeCardData: HomeCardPropsType[] = [
+    {
+        title: 'Parametre',
+        img: '/image/home/card-1.png',
+        description:
+            'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus at maiores itaque ut error quam laboriosam qui adipisci facilis exercitationem.',
+        buttonText: 'Voir nos services',
+    },
+    {
+        title: 'Accédz à nos ressources',
+        img: '/image/home/card-2.png',
+        description:
+            'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus at maiores itaque ut error quam laboriosam qui adipisci facilis exercitationem.',
+        buttonText: 'Télécharger nos document',
+    },
+    {
+        title: 'Notre parcours, votre avenir',
+        img: '/image/home/card-3.png',
+        description:
+            'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus at maiores itaque ut error quam laboriosam qui adipisci facilis exercitationem.',
+        buttonText: 'Voir nos services',
     },
 ]

@@ -2,7 +2,7 @@ import { Image } from '@mantine/core'
 import React from 'react'
 
 function Partiaire() {
-  const partiaireImage = ['/image/partinaire.png', '/image/partinaire-2.png', '/image/partinaire-3.png', '/image/partinaire-4.png']
+  const partiaireImage = ['/image/home/partinaire.png', '/image/home/partinaire-2.png', '/image/home/partinaire-3.png', '/image/home/partinaire-4.png']
   return (
     <div className='w-full bg-[#183B4E78] ' >
       <div className='flex items-center justify-center gap-10 lg:gap-20 xl:gap-30 py-5 md:py-10 flex-wrap' >
