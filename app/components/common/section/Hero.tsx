@@ -4,8 +4,8 @@ import Partiaire from '../display/Partiaire'
 
 function Hero() {
   return (
-    <div className='w-full ' >
-      <div className='w-full grid grid-cols-1 lg:grid-cols-2 gap-10  pb-10' >
+    <div className='w-full pt-[100px] ' >
+      <div className='w-full grid grid-cols-1 lg:grid-cols-2 gap-10 pb-10' >
 
         {/* left side  */}
         <div className='flex flex-col justify-center gap-5' >
