@@ -1,12 +1,12 @@
-import Link from 'next/link'
-import { Button } from '@mantine/core'
+import Header from './components/layout/Header'
 
 export default function Home() {
     return (
-        <main>
-            <Button component={Link} href="/hello">
-                Next link button
-            </Button>
-        </main>
+        <>
+            <Header />
+            <main>
+
+            </main>
+        </>
     )
 }

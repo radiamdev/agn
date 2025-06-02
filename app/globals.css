@@ -14,3 +14,14 @@
 body {
     @apply font-lato text-sm md:text-base;
 }
+
+/* Button variant */
+.primary {
+    @apply bg-secondary text-white;
+}
+.ghost-primary {
+    @apply bg-transparent text-secondary border border-secondary;
+}
+.ghost-white {
+    @apply bg-transparent text-white border border-white;
+}
