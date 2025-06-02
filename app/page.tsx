@@ -1,3 +1,4 @@
+import Footer from './components/layout/Footer'
 import Header from './components/layout/Header'
 
 export default function Home() {
@@ -5,8 +6,9 @@ export default function Home() {
         <>
             <Header />
             <main>
-
+                <div className='h-screen' ></div>
             </main>
+            <Footer />
         </>
     )
 }
