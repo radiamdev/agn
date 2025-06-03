@@ -8,5 +8,11 @@ export interface HomeCardPropsType {
     title: string
     description: string
     buttonText: string
-    buttonHref?: string
+    buttonHref: string
+}
+
+export interface PaymentType {
+    image: string
+    title: string
+    phoneNumber?: string
 }

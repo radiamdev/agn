@@ -7,9 +7,11 @@ import Button from "../common/Button"
 import Menu from "../display/Menu"
 import Logo from '../icons/Logo'
 import { useState } from "react"
+import { usePathname } from "next/navigation"
 
 function Header() {
   const [isClicked, setIsClicked] = useState(false)
+  const pathname = usePathname()
   return (
     <div className="w-screen  bg-primary fixed top-0 left-0 z-50">
       <Container tag="header" className="flex items-center justify-between relative " >
@@ -22,7 +24,7 @@ function Header() {
           {
             headerLinkData.map((link, index) => (
               <li key={index} className="inline-block mx-4">
-                <Link href={link.url} onClick={(() => setIsClicked(false))} className="hover:text-secondary transition-colors duration-300" >
+                <Link href={link.url} onClick={(() => setIsClicked(false))} className={`hover:text-secondary transition-colors duration-300 ${pathname === link.url ? 'text-secondary' : 'text-white'} `} >
                   {link.title}
                 </Link>
               </li>

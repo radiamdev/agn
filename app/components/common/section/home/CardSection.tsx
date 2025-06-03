@@ -12,7 +12,7 @@ function CardSection() {
       </div>
 
       {/* cards  */}
-      <div className=' w-fit mx-auto flex items-center justify-center md:justify-start gap-8 flex-wrap' >
+      <div className=' w-fit mx-auto flex items-center justify-center lg:justify-start gap-8 flex-wrap' >
         {
           homeCardData.map((card, id) => (
             <HomeCard
@@ -21,6 +21,7 @@ function CardSection() {
               img={card.img}
               description={card.description}
               buttonText={card.buttonText}
+              buttonHref={card.buttonHref}
             />
           ))
         }
