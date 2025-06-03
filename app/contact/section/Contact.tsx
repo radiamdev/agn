@@ -1,10 +1,10 @@
 import { FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa"
-// import Input from "../../Input"
-// import TextArea from "../../TextArea"
 import { IoMailSharp } from "react-icons/io5"
 import { TbWorld } from "react-icons/tb"
 import Link from "next/link"
 import Button from "@/app/components/common/Button"
+import Input from "@/app/components/common/Input"
+import TextArea from "@/app/components/common/TextArea"
 
 function ContactSection() {
   const informationData = [
@@ -46,13 +46,10 @@ function ContactSection() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center lg:px-10 xl:px-20 relative z-10" >
 
         <form className="w-full flex flex-col gap-5 " >
-          {/* <Input placeholder="name" />
+          <Input placeholder="name" />
           <Input placeholder="E-mail" />
-          <TextArea placeholder="Message" /> */}
-          <input type="text" placeholder="Nom" className="!outline-none border-b border-black w-full py-3 focus:outline-none mb-3" />
-          <input type="text" placeholder="Email" className="!outline-none border-b border-black w-full py-3 focus:outline-none mb-3" />
-          <input type="text" placeholder="Objet" className="!outline-none border-b border-black w-full py-3 focus:outline-none mb-3" />
-          <textarea placeholder="Message" className="!outline-none border-b border-black w-full py-3 focus:outline-none mb-3 min-h-[150px]" />
+          <Input placeholder="Object" />
+          <TextArea placeholder="Message" />
           <Button label="Envoyer" variant='primary' className="w-fit" />
         </form>
 
