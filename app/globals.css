@@ -26,3 +26,23 @@ body {
 .ghost-white {
     @apply bg-transparent text-white border border-white;
 }
+
+/* swiper css */
+.swiper-pagination {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 10px;
+    width: 100px;
+}
+.swiper-pagination-bullet {
+    background-color: gray;
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: white !important;
+    opacity: 1;
+}

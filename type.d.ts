@@ -16,3 +16,16 @@ export interface PaymentType {
     title: string
     phoneNumber?: string
 }
+
+export interface InformationDataType {
+    icon: JSX.Element
+    text: string
+    isLink?: boolean
+    href?: string
+}
+
+export interface TestimonialType {
+    text: string
+    name: string
+    work: string
+}

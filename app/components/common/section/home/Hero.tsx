@@ -2,6 +2,7 @@ import { Image } from '@mantine/core'
 import React from 'react'
 import Partiaire from '../../display/Partiaire'
 import Button from '../../Button'
+import Link from 'next/link'
 
 function Hero() {
   return (
@@ -20,8 +21,8 @@ function Hero() {
             Notre mission est de vous fournir les outils nécessaires pour votre réussite. Depuis sa création en 2017, l&apos;entreprise AGN s&apos;engage à accompagner les entrepreneurs et investisseurs dans la réalisation de leurs projets, en offrant une expertise reconnue et des services adaptés aux défis économiques actuels.
           </p>
           <div className='flex w-full gap-6 mg:gap-10' >
-            <Button label='Historique' variant='ghost-primary' />
-            <Button label='Contact' variant='primary' />
+            <Link href={'/about'} > <Button label='Historique' variant='ghost-primary' /> </Link>
+            <Link href={'/contact'} > <Button label='Contact' variant='primary' /> </Link>
           </div>
         </div>
 
