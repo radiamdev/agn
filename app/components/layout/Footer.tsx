@@ -81,7 +81,7 @@ function Footer() {
             </div>
           </div>
 
-          {/* copyright part */}
+          {/* copywright part */}
           <div className="w-full py-10" >
             &copy; 2025 <strong className="font-bold" > AGENCE NASSER-AGN </strong> Tous les droits sont réservés.
           </div>
