@@ -49,10 +49,10 @@ function ContactSection() {
           {/* <Input placeholder="name" />
           <Input placeholder="E-mail" />
           <TextArea placeholder="Message" /> */}
-          <input type="tex" />
-          <input type="tex" />
-          <input type="tex" />
-          <input type="tex" />
+          <input type="text" placeholder="Nom" className="!outline-none border-b border-black w-full py-3 focus:outline-none mb-3" />
+          <input type="text" placeholder="Email" className="!outline-none border-b border-black w-full py-3 focus:outline-none mb-3" />
+          <input type="text" placeholder="Objet" className="!outline-none border-b border-black w-full py-3 focus:outline-none mb-3" />
+          <textarea placeholder="Message" className="!outline-none border-b border-black w-full py-3 focus:outline-none mb-3 min-h-[150px]" />
           <Button label="Envoyer" variant='primary' className="w-fit" />
         </form>
 

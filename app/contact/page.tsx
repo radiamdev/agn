@@ -4,7 +4,7 @@ import Hero from './section/Hero'
 
 function page() {
   return (
-    <div className='w-screen pt-[150px] flex items-center justify-center' >
+    <div className='w-screen pt-[130px] md:pt-[150px] flex items-center justify-center' >
       <Container tag='section' >
         <Hero />
         <ContactSection />
