@@ -9,6 +9,8 @@ import {
     MantineProvider,
     mantineHtmlProps,
 } from '@mantine/core'
+import Header from './components/layout/Header'
+import Footer from './components/layout/Footer'
 
 const geistSans = Geist({
     variable: '--font-geist-sans',
@@ -38,7 +40,11 @@ export default function RootLayout({
             <body
                 className={`${geistSans.variable} ${geistMono.variable} antialiased`}
             >
-                <MantineProvider>{children}</MantineProvider>
+                <MantineProvider>
+                    <Header />
+                    {children}
+                    <Footer />
+                </MantineProvider>
             </body>
         </html>
     )
