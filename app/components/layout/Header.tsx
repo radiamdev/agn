@@ -13,6 +13,7 @@ function Header() {
   const [isClicked, setIsClicked] = useState(false)
   const pathname = usePathname()
 
+  // this is a condition to render this components
   if (pathname === '/privacyPolicy' ||
     pathname === '/cookiesPolicy' ||
     pathname === '/termsOfUse' ||
