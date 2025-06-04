@@ -12,12 +12,6 @@ import { usePathname } from "next/navigation"
 function Header() {
   const [isClicked, setIsClicked] = useState(false)
   const pathname = usePathname()
-
-  if (pathname === '/privacyPolicy' ||
-    pathname === '/cookiesPolicy' ||
-    pathname === '/termsOfUse' ||
-    pathname === '/ecommerce') return
-
   return (
     <div className="w-screen  bg-primary fixed top-0 left-0 z-50">
       <Container tag="header" className="flex items-center justify-between relative " >
