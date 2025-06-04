@@ -41,3 +41,13 @@ export interface DownloadCardType {
     buttonText: string
     link?: string
 }
+
+export interface TermOfUseSectionType {
+    title: string
+    miniTitle: string
+    text: string
+    image: string
+    proverbs: string
+    isReversed: boolean
+    haveBgColor: boolean
+}
