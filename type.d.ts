@@ -29,3 +29,8 @@ export interface TestimonialType {
     name: string
     work: string
 }
+
+export interface ActivityDataType {
+    text: string
+    imageSrc: string
+}
