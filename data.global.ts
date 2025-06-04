@@ -1,5 +1,6 @@
 import {
     ActivityDataType,
+    DownloadCardType,
     HeaderLinkType,
     HomeCardPropsType,
     PaymentType,
@@ -191,5 +192,44 @@ export const activityData: ActivityDataType[] = [
     {
         text: 'Représentation commerciale',
         imageSrc: '/image/about/activity-representation.png',
+    },
+]
+
+export const downloadCardData: DownloadCardType[] = [
+    {
+        title: 'Investissez avec stratégie',
+        text: 'Découvrez notre feuille de route pour orienter vos investissements vers le succès durable. Visualisez notre Plan d’investissement détaillé : une vision stratégique et structurée pour maximiser la rentabilité de votre engagement auprès de l’entreprise AGN.',
+        buttonText: "Plan d'investissement",
+        link: '#',
+    },
+    {
+        title: 'Votre avenir commence ici',
+        text: 'Identifiez-vous officiellement comme investisseur et ouvrez la porte à de nouvelles opportunités. Remplissez votre Fiche de l’investisseur pour officialiser votre intérêt et nous permettre de vous proposer des solutions adaptées à votre profil et à vos objectifs financiers.',
+        buttonText: "Fiche de l'investisseur",
+        link: '#',
+    },
+    {
+        title: 'Sécurisez votre engagement',
+        text: 'Un cadre clair et sécurisé pour bâtir votre investissement en toute confiance. Accédez à notre Contrat d’investissement type, conçu pour encadrer votre engagement avec clarté, sécurité juridique et transparence.',
+        buttonText: "Contrat d'investissement(PDF)",
+        link: '#',
+    },
+    {
+        title: 'Donnez vie à vos projets',
+        text: 'Remplissez votre demande de financement pour transformer vos ambitions en réalités concrètes. Utilisez ce formulaire de Demande de financements AGN pour solliciter un appui financier et donner vie à vos projets d’entreprise ou d’investissement.',
+        buttonText: 'Demande des financement AGN',
+        link: '#',
+    },
+    {
+        title: 'La clarté au service de votre décision',
+        text: 'Visualisez nos tarifs transparents pour avancer sereinement avec l’entreprise AGN. Consultez notre grille Tarif-AGN pour avoir une vision claire de nos prestations, de nos services et des coûts associés.',
+        buttonText: 'Tarif AGN',
+        link: '#',
+    },
+    {
+        title: 'Une équipe solide pour vos projets ambitieux',
+        text: 'Découvrez notre organisation interne et les experts qui vous accompagnent. Téléchargez notre Organigramme-AGN pour mieux comprendre la structure de notre agence et l’organisation de nos pôles d’expertise.',
+        buttonText: 'Organigramme AGN',
+        link: '#',
     },
 ]
