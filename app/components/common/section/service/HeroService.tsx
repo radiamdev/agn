@@ -11,6 +11,7 @@ const HeroService = () => {
                 tag="section"
                 className="flex lg:flex-row flex-col-reverse items-end justify-center min-h-screen gap-8"
             >
+                {/* Left section */}
                 <div className="lg:w-1/2 w-full flex flex-col gap-8 pb-20">
                     <div className="h-2 w-32 bg-white" />
                     <h1 className="font-bold text-4xl text-white">
@@ -22,6 +23,8 @@ const HeroService = () => {
                         <Button label="Contact" variant="primary" />{' '}
                     </Link>
                 </div>
+                
+                {/* Right section */}
                 <div className="lg:w-1/2 w-full flex items-end justify-center pt-24">
                     <Image
                         src="/image/service/hero_illustration.png"
