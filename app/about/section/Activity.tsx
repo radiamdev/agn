@@ -6,7 +6,7 @@ import { Image } from "@mantine/core"
 function Activity() {
 
   return (
-    <div className="w-screen bg-[#BF900045] text-black pt-10 pb-10 lg:pb-0 mb-10" >
+    <div className="w-screen bg-secondary-fade text-black pt-10 pb-10 lg:pb-0 mb-10" >
       <Container tag="section" className="flex flex-col gap-10"  >
 
         {/* title  */}
