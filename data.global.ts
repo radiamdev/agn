@@ -284,3 +284,24 @@ export const threeTermOfUseSection: TermOfUseSectionType[] = [
         haveBgColor: false,
     },
 ]
+
+export const twoTermOfUseSection: TermOfUseSectionType[] = [
+    {
+        title: 'ONG-ASP AFRICA SOS PRISONNIER',
+        miniTitle: 'Partenaire pour la charité dans les prisons',
+        image: '/image/termOfUse/ASP.png',
+        text: 'Ce partenariat traduit notre engagement commun pour la dignité humaine et l’action  solidaire dans les milieux carcéraux.  En partenariat avec l ONG-ASP (AFRICA SOS PRISONNIER), nous agissons pour le  respect de la dignité humaine en milieu carcéral, à travers des actions humanitaires et  des dons ciblés.',
+        proverbs: 'La lumière au service de la nation',
+        isReversed: false,
+        haveBgColor: false,
+    },
+    {
+        title: 'DJOMANI MEDIA',
+        miniTitle: 'Partenaire pour la communication',
+        image: '/image/termOfUse/djomani.png',
+        text: 'DJOMANI MEDIA est notre relais de communication engagé, pour informer, valoriser  et connecter nos initiatives au grand public.  Avec DJOMANI MEDIA, nous assurons une communication moderne, dynamique et  adaptée à nos actions, en renforçant notre visibilité à travers les médias traditionnels  et numériques.',
+        proverbs: 'La lumière au service de la nation',
+        isReversed: true,
+        haveBgColor: false,
+    },
+]
