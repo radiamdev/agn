@@ -16,12 +16,16 @@ export const headerLinkData: HeaderLinkType[] = [
         url: '/service',
     },
     {
+        title: 'À propos',
+        url: '/about',
+    },
+    {
         title: 'Téléchargements',
         url: '/telechargement',
     },
     {
-        title: 'À propos',
-        url: '/about',
+        title: 'Question',
+        url: '/question',
     },
 ]
 
@@ -41,6 +45,10 @@ export const footerPrincipalLinksData: HeaderLinkType[] = [
     {
         title: 'Contact',
         url: '/contact',
+    },
+    {
+        title: 'Question',
+        url: '/question',
     },
 ]
 
