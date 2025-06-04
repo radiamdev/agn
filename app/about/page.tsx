@@ -1,6 +1,7 @@
 import Activity from "./section/Activity"
 import Hero from "./section/Hero"
 import Origin from "./section/Origin"
+import WhoAryWe from "./section/WhoAryWe"
 
 function page() {
   return (
@@ -8,6 +9,7 @@ function page() {
       <Hero />
       <Origin />
       <Activity />
+      <WhoAryWe />
     </div>
   )
 }
