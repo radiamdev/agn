@@ -29,3 +29,15 @@ export interface TestimonialType {
     name: string
     work: string
 }
+
+export interface ActivityDataType {
+    text: string
+    imageSrc: string
+}
+
+export interface DownloadCardType {
+    title: string
+    text: string
+    buttonText: string
+    link?: string
+}

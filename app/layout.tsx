@@ -10,6 +10,7 @@ import {
     MantineProvider,
     mantineHtmlProps,
 } from '@mantine/core'
+import PrivacyHeader from './components/layout/PrivacyHeader'
 
 const geistSans = Geist({
     variable: '--font-geist-sans',
@@ -40,6 +41,7 @@ export default function RootLayout({
                 className={`${geistSans.variable} ${geistMono.variable} antialiased`}
             >
                 <MantineProvider>
+                    <PrivacyHeader />
                     <Header />
                     {children}
                     <Footer />

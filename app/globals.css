@@ -17,6 +17,11 @@ body {
     @apply font-lato text-sm md:text-base overflow-x-hidden;
 }
 
+h1,
+h2 {
+    @apply font-rubik;
+}
+
 /* Button variant */
 .primary {
     @apply bg-secondary text-white;
