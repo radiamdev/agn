@@ -1,4 +1,5 @@
 import {
+    ActivityDataType,
     HeaderLinkType,
     HomeCardPropsType,
     PaymentType,
@@ -153,5 +154,34 @@ export const testimonialData: TestimonialType[] = [
         name: 'RASOANIRINA Véronique',
         work: 'Gérante d’une épicerie',
         text: "Je faisais face à un problème complexe en matière de fiscalité qui menaçait la stabilité de mon entreprise. Ne sachant pas comment m'en sortir, j'ai sollicité l'AGENCE NASSER-AGN.Leur équipe d'experts m'a accompagné à chaque étape : analyse de ma situation, régularisation de mes obligations fiscales, et mise en place d’une stratégie durable pour éviter tout futur litige. Grâce à leur professionnalisme, mon dossier a été réglé rapidement et mon entreprise a pu repartir sur de bonnes bases. Je suis pleinement satisfait des services de l'AGN et je recommande leur accompagnement à toute entreprise souhaitant sécuriser sa situation fiscale.",
+    },
+]
+
+export const nifStatInfos = [
+    'STAT : 74908 41 2017 0 00865',
+    'NIF : 5002818832',
+    'RCS : Mahajanga 2018 A 00016',
+]
+
+export const activityData: ActivityDataType[] = [
+    {
+        text: 'Consultance en entrepreneuriat',
+        imageSrc: '/image/about/activity-consultance.png',
+    },
+    {
+        text: 'Investissements et gestion de capital',
+        imageSrc: '/image/about/activity-invest.png',
+    },
+    {
+        text: 'Consignation des navires',
+        imageSrc: '/image/about/activity-consingation.png',
+    },
+    {
+        text: 'Import-export',
+        imageSrc: '/image/about/activity-import-export.png',
+    },
+    {
+        text: 'Représentation commerciale',
+        imageSrc: '/image/about/activity-representation.png',
     },
 ]
