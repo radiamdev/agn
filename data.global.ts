@@ -29,6 +29,25 @@ export const headerLinkData: HeaderLinkType[] = [
     },
 ]
 
+export const privacyHeaderData: HeaderLinkType[] = [
+    {
+        title: 'Politique de confidentialité',
+        url: '/privacyPolicy',
+    },
+    {
+        title: 'Politique des cookies',
+        url: '/cookiesPolicy',
+    },
+    {
+        title: 'Conditions d’utilisation',
+        url: '/termsOfUse',
+    },
+    {
+        title: 'E--Commerce',
+        url: '/ecommerce',
+    },
+]
+
 export const footerPrincipalLinksData: HeaderLinkType[] = [
     {
         title: 'Accueil',
