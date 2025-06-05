@@ -1,3 +1,5 @@
+import React from 'react'
+
 export interface HeaderLinkType {
     title: string
     url: string
@@ -33,4 +35,12 @@ export interface TestimonialType {
 export interface ActivityDataType {
     text: string
     imageSrc: string
+}
+
+export interface PoliticSectionPropsType {
+    titleOne: string
+    titleTwo: string
+    contentOne: React.ReactNode
+    contentTwo: React.ReactNode
+    haveEmail: boolean
 }
