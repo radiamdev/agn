@@ -60,3 +60,19 @@ export interface TermOfUseSectionType {
     isReversed: boolean
     haveBgColor: boolean
 }
+
+export interface EcommerceItemProps {
+    title: string
+    imageSrc: string
+    content: React.ReactNode
+    isReversed: boolean
+}
+
+export interface EcommerceSectionProps {
+    titleOne: string
+    titleTwo: string
+    contentOne: React.ReactNode
+    contentTwo: React.ReactNode
+    imageOne: string
+    imageTwo: string
+}
