@@ -1,3 +1,5 @@
+import React from 'react'
+
 export interface HeaderLinkType {
     title: string
     url: string
@@ -35,6 +37,13 @@ export interface ActivityDataType {
     imageSrc: string
 }
 
+export interface PoliticSectionPropsType {
+    titleOne: string
+    titleTwo: string
+    contentOne: React.ReactNode
+    contentTwo: React.ReactNode
+    haveEmail: boolean
+}
 export interface DownloadCardType {
     title: string
     text: string
