@@ -4,6 +4,7 @@ import {
     HeaderLinkType,
     HomeCardPropsType,
     PaymentType,
+    TermOfUseSectionType,
     TestimonialType,
 } from './type'
 
@@ -250,5 +251,57 @@ export const downloadCardData: DownloadCardType[] = [
         text: 'Découvrez notre organisation interne et les experts qui vous accompagnent. Téléchargez notre Organigramme-AGN pour mieux comprendre la structure de notre agence et l’organisation de nos pôles d’expertise.',
         buttonText: 'Organigramme AGN',
         link: '#',
+    },
+]
+
+export const threeTermOfUseSection: TermOfUseSectionType[] = [
+    {
+        title: 'AGRO FARM WORLD  ',
+        miniTitle: "Partenaire pour la promotion de l'agrobusiness",
+        image: '/image/termOfUse/agro.png',
+        text: 'Ensemble, nous semons les bases d’un agrobusiness moderne, durable et moteur de  développement local.  AGRO FARM WORLD nous accompagne dans le développement de projets agricoles  et agroalimentaires durables, en apportant son expertise en agriculture, élevage et  pisciculture.',
+        proverbs: ' Cultiver aujourd’hui, nourrir demain ',
+        isReversed: false,
+        haveBgColor: false,
+    },
+    {
+        title: 'ENTREPRISE ROUKKAYAH',
+        miniTitle:
+            'Partenaire pour la construction de bâtiments et travaux publics (BTP)',
+        image: '/image/termOfUse/entreprise.png',
+        text: 'En collaborant avec ce pilier du BTP, nous donnons vie à des projets structurants et  durables pour nos communautés.  ENTREPRISE ROUKKAYAH est notre alliée de confiance pour la réalisation de nos  infrastructures : bâtiments administratifs, bassins piscicoles, centres techniques et plus  encore.',
+        proverbs: 'Bâtir solide, construire l’avenir',
+        isReversed: true,
+        haveBgColor: true,
+    },
+    {
+        title: 'UNIVERSITE MASOANDRO (UM)',
+        miniTitle: 'Partenaire pour la recherche et le développement',
+        image: '/image/termOfUse/university.png',
+        text: 'Grâce à ce partenariat académique, nous transformons les idées en solutions  concrètes pour le progrès de la société.   En collaboration avec l’Université Masoandro, nous favorisons la recherche appliquée  et l’innovation, en intégrant la jeunesse universitaire à nos initiatives de terrain.',
+        proverbs: 'La lumière au service de la nation',
+        isReversed: true,
+        haveBgColor: false,
+    },
+]
+
+export const twoTermOfUseSection: TermOfUseSectionType[] = [
+    {
+        title: 'ONG-ASP AFRICA SOS PRISONNIER',
+        miniTitle: 'Partenaire pour la charité dans les prisons',
+        image: '/image/termOfUse/ASP.png',
+        text: 'Ce partenariat traduit notre engagement commun pour la dignité humaine et l’action  solidaire dans les milieux carcéraux.  En partenariat avec l ONG-ASP (AFRICA SOS PRISONNIER), nous agissons pour le  respect de la dignité humaine en milieu carcéral, à travers des actions humanitaires et  des dons ciblés.',
+        proverbs: 'La lumière au service de la nation',
+        isReversed: false,
+        haveBgColor: false,
+    },
+    {
+        title: 'DJOMANI MEDIA',
+        miniTitle: 'Partenaire pour la communication',
+        image: '/image/termOfUse/djomani.png',
+        text: 'DJOMANI MEDIA est notre relais de communication engagé, pour informer, valoriser  et connecter nos initiatives au grand public.  Avec DJOMANI MEDIA, nous assurons une communication moderne, dynamique et  adaptée à nos actions, en renforçant notre visibilité à travers les médias traditionnels  et numériques.',
+        proverbs: 'La lumière au service de la nation',
+        isReversed: true,
+        haveBgColor: false,
     },
 ]

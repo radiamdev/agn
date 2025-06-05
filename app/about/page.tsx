@@ -7,7 +7,7 @@ import WhoAryWe from "./section/WhoAryWe"
 
 function page() {
   return (
-    <div className="w-screen pt-[90px] md:pt-[150px]  " >
+    <div className="w-screen pt-[90px] md:pt-[150px]" >
       <Hero />
       <Origin />
       <Activity />
