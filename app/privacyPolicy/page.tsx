@@ -2,6 +2,12 @@ import React from 'react'
 import PoliticSection from '../components/display/PoliticSection'
 import PoliticHeading from '../components/display/PoliticHeading'
 
+export const metadata = {
+  title: 'AGN | Politique de confidentialité',
+  description: 'Consultez notre politique de confidentialité pour en savoir plus sur la protection de vos données.',
+};
+
+
 function page() {
   return (
     <div className="w-screen pt-[90px] md:pt-[150px]">

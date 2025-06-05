@@ -1,6 +1,12 @@
 import PoliticHeading from "../components/display/PoliticHeading"
 import PoliticSection from "../components/display/PoliticSection"
 
+export const metadata = {
+  title: 'AGN | Politique des cookies',
+  description: 'Découvrez comment AGN utilise les cookies sur son site.',
+};
+
+
 function page() {
   return (
     <div className="w-screen pt-[90px] md:pt-[150px]">

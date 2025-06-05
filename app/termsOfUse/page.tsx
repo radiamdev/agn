@@ -3,6 +3,12 @@ import Hero from "./section/Hero"
 import TermOfUseSection from "../components/display/TermOfUseSection"
 import Distributeur from "./section/Distributeur"
 
+export const metadata = {
+  title: 'AGN | Conditions d’utilisation',
+  description: 'Lisez nos conditions générales d’utilisation du site AGN.',
+};
+
+
 function page() {
   return (
     <div className="w-screen pt-[90px] md:pt-[150px]" >

@@ -2,6 +2,12 @@ import Link from "next/link"
 import EcommerceSection from "../components/display/EcommerceSection"
 import PoliticHeading from "../components/display/PoliticHeading"
 
+export const metadata = {
+  title: 'AGN | E--Commerce',
+  description: 'Informations sur la plateforme e-commerce de AGN.',
+};
+
+
 function page() {
   return (
     <div className="w-screen pt-[90px] md:pt-[150px]" >
