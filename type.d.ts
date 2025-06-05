@@ -44,3 +44,9 @@ export interface PoliticSectionPropsType {
     contentTwo: React.ReactNode
     haveEmail: boolean
 }
+export interface DownloadCardType {
+    title: string
+    text: string
+    buttonText: string
+    link?: string
+}
