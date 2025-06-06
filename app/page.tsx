@@ -6,6 +6,12 @@ import IncitationSection from './components/common/section/home/IncitationSectio
 import PaymentSection from './components/common/section/home/PaymentSection'
 import TestimonialSection from './components/common/section/home/TestimonialSection'
 
+export const metadata = {
+    title: 'AGN | Accueil',
+    description: 'Bienvenue sur le site officiel de AGN.',
+};
+
+
 export default function Home() {
     return (
         <div>

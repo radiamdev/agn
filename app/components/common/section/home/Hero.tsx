@@ -1,6 +1,6 @@
 import { Image } from '@mantine/core'
 import React from 'react'
-import Partiaire from '../../display/Partiaire'
+import Partiaire from '../../../display/Partiaire'
 import Button from '../../Button'
 import Link from 'next/link'
 

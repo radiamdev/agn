@@ -1,3 +1,5 @@
+import React from 'react'
+
 export interface HeaderLinkType {
     title: string
     url: string
@@ -28,4 +30,49 @@ export interface TestimonialType {
     text: string
     name: string
     work: string
+}
+
+export interface ActivityDataType {
+    text: string
+    imageSrc: string
+}
+
+export interface PoliticSectionPropsType {
+    titleOne: string
+    titleTwo: string
+    contentOne: React.ReactNode
+    contentTwo: React.ReactNode
+    haveEmail: boolean
+}
+export interface DownloadCardType {
+    title: string
+    text: string
+    buttonText: string
+    link?: string
+}
+
+export interface TermOfUseSectionType {
+    title: string
+    miniTitle: string
+    text: string
+    image: string
+    proverbs: string
+    isReversed: boolean
+    haveBgColor: boolean
+}
+
+export interface EcommerceItemProps {
+    title: string
+    imageSrc: string
+    content: React.ReactNode
+    isReversed: boolean
+}
+
+export interface EcommerceSectionProps {
+    titleOne: string
+    titleTwo: string
+    contentOne: React.ReactNode
+    contentTwo: React.ReactNode
+    imageOne: string
+    imageTwo: string
 }
