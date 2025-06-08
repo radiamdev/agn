@@ -28,7 +28,7 @@ const services = [
 
 const ServiceSectionOne = () => {
     return (
-        <div className="w-screen bg-white">
+        <section className="w-screen bg-white">
             <Container tag="section" className="space-y-4 py-6">
                 <div className="h-2 w-32 bg-secondary" />
                 <h2 className="text-black font-semibold text-2xl">
@@ -60,7 +60,7 @@ const ServiceSectionOne = () => {
                     </button>
                 </div>
             </Container>
-        </div>
+        </section>
     )
 }
 
