@@ -59,7 +59,7 @@ const data = [
 
 const ServiceSectionTwo = () => {
     return (
-        <div className="w-screen bg-[#BF90008F]">
+        <section className="w-screen bg-[#BF90008F]">
             <Container tag="section" className="space-y-4 py-6">
                 <div className="h-2 w-32 bg-secondary" />
                 <h2 className="text-black font-semibold text-2xl">
@@ -124,7 +124,7 @@ const ServiceSectionTwo = () => {
                     </div>
                 </div>
             </Container>
-        </div>
+        </section>
     )
 }
 
