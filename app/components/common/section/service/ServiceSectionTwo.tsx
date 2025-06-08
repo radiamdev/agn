@@ -99,15 +99,15 @@ const ServiceSectionTwo = () => {
                                 <ol className="space-y-4">
                                     <li>
                                         1- Accompagnement : Rapport de stage de
-                                        fin d'études universitaires
+                                        fin d&apos;études universitaires
                                     </li>
                                     <li>
                                         2- Accompagnement : Projet de fin
-                                        d'études universitaires
+                                        d&apos;études universitaires
                                     </li>
                                     <li>
                                         3- Accompagnement : Etudes des
-                                        recherches de fin d'études
+                                        recherches de fin d&apos;études
                                         universitaires
                                     </li>
                                 </ol>
