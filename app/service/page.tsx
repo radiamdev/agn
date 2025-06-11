@@ -13,14 +13,14 @@ export const metadata = {
 
 const ServicePage = () => {
     return (
-        <main>
+        <>
             <HeroService />
             <ServiceSectionOne />
             <ServiceSectionTwo />
             <ServiceSectionThree />
             <ServiceSectionFour />
             <ServiceSectionFive />
-        </main>
+        </>
     )
 }
 

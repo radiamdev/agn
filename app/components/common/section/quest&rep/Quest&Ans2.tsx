@@ -1,6 +1,12 @@
+'use client'
+
 import Container from "../../Container"
 import { Timeline, TimelineItem } from "@mantine/core"
 import SeeMore from "../../SeeMore"
+import { useRef } from "react"
+import { useGSAP } from "@gsap/react"
+import gsap from "gsap"
+import { ScrollTrigger } from "gsap/ScrollTrigger"
 
 const desc = "AGENCE NASSER ou AGN est une entreprise innovante de conseil en entrepreneuriat, d'investissements et de gestion de capital qui offre aux investisseurs la possibilité de participer au marché de l'investissement en son sein et de réaliser des bénéfices annuels garantis payables à l'échéance contractuelle.",
     desc1 = "La sécurité est une priorité absolue chez l'entreprise AGN. Nous conservons les fonds des clients dans des comptes séparés pour garantir la sécurité de vos activités d'investissement et de vos informations personnelles.",
@@ -10,10 +16,34 @@ const desc = "AGENCE NASSER ou AGN est une entreprise innovante de conseil en en
     desc5 = "Oui, nous fournissons des ressources pédagogiques telles que des guides d'investissement, des formations gratuites et des articles pour aider les investisseurs à améliorer leurs connaissances sur les stratégies d'investissement."
 
 export default function QuestAns2() {
+    const leftSide = useRef<HTMLDivElement>(null)
+    const rightSide = useRef<HTMLDivElement>(null)
+
+    useGSAP(() => {
+        gsap.registerPlugin(ScrollTrigger)
+        const tl = gsap.timeline({
+            scrollTrigger: {
+                trigger: leftSide.current,
+                start: 'top center'
+            }
+        })
+
+        tl.from(leftSide.current, {
+            opacity: 0,
+            xPercent: 10,
+            ease: 'power2.out'
+        })
+            .from(rightSide.current, {
+                opacity: 0,
+                xPercent: -10,
+                ease: 'power2.out'
+            })
+    })
+
     return (
         <Container className="py-10">
             <SeeMore maxheight="520px">
-                <div className="w-full md:flex">
+                <div ref={leftSide} className="w-full md:flex">
                     <div className="w-full md:w-1/2">
                         <Timeline active={2} lineWidth={1} bulletSize={16} color="#bf9000">
                             <TimelineItem title="Comment l'entreprise AGN garantit-elle la sécurité des fonds et des données des investisseurs ?">
@@ -27,7 +57,8 @@ export default function QuestAns2() {
                             </TimelineItem>
                         </Timeline>
                     </div>
-                    <div className="w-full pt-6 md:pt-0 md:w-1/2">
+
+                    <div ref={rightSide} className="w-full pt-6 md:pt-0 md:w-1/2">
                         <Timeline active={2} lineWidth={1} bulletSize={16} color="#bf9000">
                             <TimelineItem title="Qu'advient-il de mes fonds en cas de faillite ou d'insolvabilité de l'entreprise AGN ?">
                                 <p className="font-light text-gray-500 mt-5"> {desc3} </p>
