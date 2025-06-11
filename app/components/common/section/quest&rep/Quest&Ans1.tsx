@@ -1,5 +1,11 @@
+'use client'
+
+import { useGSAP } from "@gsap/react";
 import Container from "../../Container"
 import SeeMore from "../../SeeMore"
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useRef } from "react";
 
 type infoForme = {
     title: string;
@@ -8,7 +14,7 @@ type infoForme = {
 
 function Forme({ title, desc }: infoForme) {
     return (
-        <div className="border border-gray-200 md:border-none bg-white md:h-[250px] md:w-[450px] rounded-lg p-4 ">
+        <div data-forme className="border border-gray-200 md:border-none bg-white md:h-[250px] md:w-[450px] rounded-lg p-4 ">
             <div className="flex items-start space-x-4">
                 <div>
                     <div className="bg-[#bf9000] rounded-full h-4 w-4"></div>
@@ -36,8 +42,27 @@ const title1 = "Quel est l'âge minimum requis pour investir au sein de l'entrep
     desc6 = "Nous avons mis en place des mesures de gestion des risques rigoureuses pour protéger à la fois les investisseurs et l'entreprise. Cela comprend la définition de limites d'effet de levier maximales, la mise à disposition d'outils de gestion des risques tels que les ordres arrêt-perte et prendre-profit, et la fourniture de supports pédagogiques sur la gestion des risques."
 
 export default function QuestAns1() {
+    const container = useRef<HTMLDivElement>(null)
+    useGSAP(() => {
+        const forms = document.querySelectorAll('[data-forme]')
+
+        if (!forms) return
+
+        gsap.registerPlugin(ScrollTrigger)
+        gsap.from(forms, {
+            opacity: 0,
+            yPercent: 10,
+            stagger: { each: 0.2, from: 'random' },
+            duration: 1,
+            scrollTrigger: {
+                trigger: container.current,
+                start: 'top center'
+            }
+        })
+
+    }, [])
     return (
-        <Container className="bg-[linear-gradient(to_bottom,_#0194B652_1%,_#BFE4ED12_25%,_white_50%,_#BFE4ED12_75%,_#0194B652_99%)] py-10 flex flex-col items-center">
+        <Container ref={container} className="bg-[linear-gradient(to_bottom,_#0194B652_1%,_#BFE4ED12_25%,_white_50%,_#BFE4ED12_75%,_#0194B652_99%)] py-10 flex flex-col items-center">
             <SeeMore maxheight="420px">
                 <div className="md:flex space-y-4 pb-4 md:pb-0 md:space-x-4">
                     <Forme

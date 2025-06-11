@@ -1,4 +1,10 @@
+'use client'
+
+import { useRef } from "react"
 import SeeMore from "../../SeeMore"
+import { useGSAP } from "@gsap/react"
+import gsap from "gsap"
+import { ScrollTrigger } from "gsap/ScrollTrigger"
 
 type infoForme = {
     titre: string,
@@ -7,7 +13,7 @@ type infoForme = {
 
 function Forme({ titre, desc }: infoForme) {
     return (
-        <div className="p-8 border-1 border-gray-500 w-[350px] md:w-[460px] space-y-6">
+        <div data-forme2 className="p-8 border-1 border-gray-500 w-[350px] md:w-[460px] space-y-6">
             <div className="font-bold">
                 {titre}
             </div>
@@ -26,9 +32,27 @@ const desc = "Oui, nous accordons une grande importance aux commentaires et sugg
 
 
 export default function QuestAns4() {
+    const container = useRef<HTMLElement>(null)
+    useGSAP(() => {
+        const forms = document.querySelectorAll('[data-forme2]')
+
+        if (!forms) return
+
+        gsap.registerPlugin(ScrollTrigger)
+        gsap.from(forms, {
+            opacity: 0,
+            yPercent: 10,
+            stagger: 0.5,
+            scrollTrigger: {
+                trigger: container.current,
+                start: 'top center'
+            }
+        })
+
+    }, [])
     return (
         <SeeMore maxheight="900px">
-            <section className="py-10 flex flex-col items-center space-y-6">
+            <section ref={container} className="py-10 flex flex-col items-center space-y-6">
 
                 <div className="md:flex space-y-6 md:space-y-0 md:space-x-6">
                     <Forme
