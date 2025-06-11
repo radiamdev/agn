@@ -7,7 +7,8 @@ interface ServiceSectionOneCardProps {
     price: string
 }
 
-const ServiceSectionOneCard = ({icon, title, price}: ServiceSectionOneCardProps) => {
+const ServiceSectionOneCard = ({ icon, title, price }: ServiceSectionOneCardProps) => {
+
     return (
         <div className="bg-pink-primary shadow-lg border-2 border-secondary rounded-3xl flex flex-col items-center gap-2 p-5">
             <Image
@@ -47,7 +48,7 @@ const ServiceSectionOneCard = ({icon, title, price}: ServiceSectionOneCardProps)
                         <p className="font-semibold">
                             Investissement :{' '}
                             <span className="font-normal">
-                               {price}
+                                {price}
                             </span>
                         </p>
                     </div>
