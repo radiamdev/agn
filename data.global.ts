@@ -305,3 +305,8 @@ export const twoTermOfUseSection: TermOfUseSectionType[] = [
         haveBgColor: false,
     },
 ]
+
+export const textRevealAnimation = {
+    y: '100%',
+    clipPath: 'inset(0 0 100% 0)',
+}

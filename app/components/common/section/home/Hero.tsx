@@ -1,16 +1,42 @@
+'use client'
+
 import { Image } from '@mantine/core'
 import React from 'react'
 import Partiaire from '../../../display/Partiaire'
 import Button from '../../Button'
 import Link from 'next/link'
+import { useGSAP } from '@gsap/react'
+import gsap from 'gsap'
+import { textRevealAnimation } from '@/data.global'
 
 function Hero() {
+  const leftSideRef = React.useRef<HTMLDivElement>(null)
+  const rightSideRef = React.useRef<HTMLImageElement>(null)
+
+  useGSAP(() => {
+    const tl = gsap.timeline()
+
+    tl
+      .from(leftSideRef.current?.children as HTMLCollection, {
+        ...textRevealAnimation,
+        stagger: 0.2,
+        ease: 'power4.out',
+      })
+      .from(rightSideRef.current, {
+        opacity: 0,
+        scale: 0.5,
+        duration: 1,
+        ease: 'elastic.out(1, 0.3),'
+      }, '-=0.5)')
+
+  }, [])
+
   return (
     <div className='w-full pt-[100px] md:pt-[170px] ' >
       <div className='w-full grid grid-cols-1 lg:grid-cols-2 gap-10 pb-10' >
 
         {/* left side  */}
-        <div className='flex flex-col justify-center gap-5' >
+        <div ref={leftSideRef} className='flex flex-col justify-center gap-5' >
           <span className='h-2 w-[100px] bg-[#0194B6]' ></span>
           <h1 className='font-semibold text-3xl md:text-4xl max-w-[410px] font-rubik ' >
             Bienvenue chez AGENCE NASSER-AGN
@@ -28,6 +54,7 @@ function Hero() {
 
         {/* right side  */}
         <Image
+          ref={rightSideRef}
           src={'/image/home/home-hero.png'}
           alt='hero image'
           className='w-full h-auto'
