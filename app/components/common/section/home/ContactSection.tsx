@@ -1,3 +1,5 @@
+'use client'
+
 import { FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa"
 import Button from "../../Button"
 import Input from "../../Input"
@@ -6,8 +8,17 @@ import { InformationDataType } from "@/type"
 import { IoMailSharp } from "react-icons/io5"
 import { TbWorld } from "react-icons/tb"
 import Link from "next/link"
+import React from "react"
+import { useGSAP } from "@gsap/react"
+import gsap from "gsap"
+import { ScrollTrigger } from "gsap/ScrollTrigger"
 
 function ContactSection() {
+
+  const sectionRef = React.useRef<HTMLElement>(null)
+  const leftSideRef = React.useRef<HTMLFormElement>(null)
+  const rightSideRef = React.useRef<HTMLDivElement>(null)
+
   const informationData: InformationDataType[] = [
     {
       icon: <FaMapMarkerAlt size={30} color="black" />,
@@ -33,8 +44,33 @@ function ContactSection() {
     },
   ]
 
+
+  useGSAP(() => {
+    gsap.registerPlugin(ScrollTrigger)
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: sectionRef.current,
+        start: 'top center',
+        end: 'bottom center',
+      }
+    })
+    tl
+      .from(leftSideRef.current, {
+        xPercent: -20,
+        opacity: 0,
+        duration: 1,
+        ease: 'power4.out',
+      })
+      .from(rightSideRef.current, {
+        xPercent: 20,
+        opacity: 0,
+        duration: 1,
+        ease: 'power4.out',
+      }, '<')
+  }, [])
+
   return (
-    <section className="w-full flex flex-col items-center justify-center gap-10  relative lg:p-8 xl:p-10 pb-10 ">
+    <section ref={sectionRef} className="w-full flex flex-col items-center justify-center gap-10  relative lg:p-8 xl:p-10 pb-10 ">
       {/* title  */}
       <h1 className="pt-8 text-3xl font-bold relative w-fit" >
         <span className="absolute h-2 w-[100px] bg-secondary top-0 left-0 " ></span>
@@ -46,14 +82,14 @@ function ContactSection() {
       {/* form and contact  */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center lg:px-10 xl:px-20 relative z-10" >
 
-        <form className="w-full flex flex-col gap-5  " >
+        <form ref={leftSideRef} className="w-full flex flex-col gap-5  " >
           <Input placeholder="name" />
           <Input placeholder="E-mail" />
           <TextArea placeholder="Message" />
           <Button label="Envoyer" variant='primary' className="w-fit" />
         </form>
 
-        <div className="bg-black text-white px-10 py-10 flex flex-col gap-10" >
+        <div ref={rightSideRef} className="bg-black text-white px-10 py-10 flex flex-col gap-10" >
           <h4 className="text-2xl font-bold text-center" > Information </h4>
           {
             informationData.map((item, id) => (
