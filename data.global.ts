@@ -27,7 +27,7 @@ export const headerLinkData: HeaderLinkType[] = [
     },
     {
         title: 'Question',
-        url: '/question',
+        url: '/question-&-reponse',
     },
 ]
 
@@ -69,7 +69,7 @@ export const footerPrincipalLinksData: HeaderLinkType[] = [
     },
     {
         title: 'Question',
-        url: '/question',
+        url: '/question-&-reponse',
     },
 ]
 
