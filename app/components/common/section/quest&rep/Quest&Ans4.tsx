@@ -42,10 +42,11 @@ export default function QuestAns4() {
         gsap.from(forms, {
             opacity: 0,
             yPercent: 10,
-            stagger: 0.5,
+            stagger: 0.3,
             scrollTrigger: {
                 trigger: container.current,
-                start: 'top center'
+                start: 'top center',
+                end: 'bottom center'
             }
         })
 
