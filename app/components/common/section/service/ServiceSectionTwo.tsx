@@ -1,7 +1,12 @@
+'use client'
+
 import React from 'react'
 import Container from '../../Container'
 import ServiceSectionTwoCard from './ServiceSectionTwoCard'
 import { Image } from '@mantine/core'
+import { useGSAP } from '@gsap/react'
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 const data = [
     {
@@ -58,8 +63,27 @@ const data = [
 ]
 
 const ServiceSectionTwo = () => {
+    const sectionRef = React.useRef<HTMLElement>(null)
+    const cardContainerRef = React.useRef<HTMLDivElement>(null)
+
+    useGSAP(() => [
+        gsap.registerPlugin(ScrollTrigger),
+        gsap.from(cardContainerRef.current?.children as HTMLCollection, {
+            opacity: 0,
+            y: 50,
+            ease: 'power2.out',
+            duration: 1,
+            stagger: { each: 0.2, from: 'random' },
+            scrollTrigger: {
+                trigger: sectionRef.current,
+                start: 'top 40%',
+                end: 'bottom center',
+            },
+        })
+    ], [])
+
     return (
-        <section className="w-screen bg-[#BF90008F]">
+        <section ref={sectionRef} className="w-screen bg-[#BF90008F]">
             <Container tag="section" className="space-y-4 py-6">
                 <div className="h-2 w-32 bg-secondary" />
                 <h2 className="text-black font-semibold text-2xl">
@@ -72,7 +96,7 @@ const ServiceSectionTwo = () => {
 
                 {/* Card container */}
                 <div className="flex flex-col-reverse lg:flex-row items-start lg:gap-4 gap-12 py-8">
-                    <div className="w-full lg:w-[60%] grid grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div ref={cardContainerRef} className="w-full lg:w-[60%] grid grid-cols-2 lg:grid-cols-3 gap-6">
                         {data.map((item) => (
                             <div key={item.description}>
                                 <ServiceSectionTwoCard

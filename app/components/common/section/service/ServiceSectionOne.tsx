@@ -1,7 +1,12 @@
+'use client'
+
 import React from 'react'
 import Container from '../../Container'
 import ServiceSectionOneCard from './ServiceSectionOneCard'
 import { FaArrowRightLong } from 'react-icons/fa6'
+import { useGSAP } from '@gsap/react'
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 const services = [
     {
@@ -27,8 +32,31 @@ const services = [
 ]
 
 const ServiceSectionOne = () => {
+    const containerRef = React.useRef<HTMLElement>(null)
+    const cardContainerRef = React.useRef<HTMLDivElement>(null)
+
+    useGSAP(() => {
+        gsap.registerPlugin(ScrollTrigger)
+        const tl = gsap.timeline({
+            scrollTrigger: {
+                trigger: containerRef.current,
+                start: 'top 40%',
+                end: 'bottom center',
+            }
+        })
+
+        tl
+            .from(cardContainerRef.current?.children as HTMLCollection, {
+                y: 50,
+                opacity: 0,
+                duration: 1,
+                ease: 'power4.out',
+                stagger: 0.3,
+            })
+    }, [])
+
     return (
-        <section className="w-screen bg-white">
+        <section ref={containerRef} className="w-screen bg-white">
             <Container tag="section" className="space-y-4 py-6">
                 <div className="h-2 w-32 bg-secondary" />
                 <h2 className="text-black font-semibold text-2xl">
@@ -38,7 +66,7 @@ const ServiceSectionOne = () => {
                     Optimisez vos investissements, sécurisez votre avenir.
                 </h1>
                 <p className="text-black/80 text-md text-justify">{`Nous vous aidons à faire fructifier votre capital avec rigueur et vision. Maximisez la rentabilité de vos investissements grâce à notre accompagnement stratégique. Nous vous conseillons dans l’allocation de votre capital, l’analyse des opportunités, et la sécurisation de votre patrimoine, avec une approche personnalisée et rigoureuse.`}</p>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-8">
+                <div ref={cardContainerRef} className="grid grid-cols-1 md:grid-cols-2 gap-8 my-8">
                     {services.map((service, index) => (
                         <ServiceSectionOneCard
                             key={service.title + index}

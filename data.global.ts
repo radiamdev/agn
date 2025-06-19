@@ -27,7 +27,7 @@ export const headerLinkData: HeaderLinkType[] = [
     },
     {
         title: 'Question',
-        url: '/question',
+        url: '/question-&-reponse',
     },
 ]
 
@@ -69,7 +69,7 @@ export const footerPrincipalLinksData: HeaderLinkType[] = [
     },
     {
         title: 'Question',
-        url: '/question',
+        url: '/question-&-reponse',
     },
 ]
 
@@ -305,3 +305,8 @@ export const twoTermOfUseSection: TermOfUseSectionType[] = [
         haveBgColor: false,
     },
 ]
+
+export const textRevealAnimation = {
+    y: '100%',
+    clipPath: 'inset(0 0 100% 0)',
+}
