@@ -50,7 +50,7 @@ export default function QuestAns() {
   }, [])
 
   return (
-    <Container>
+    <Container ref={container}>
       <SeeMore maxheight="600px">
         <div ref={sectionOne} className="flex w-full py-5 md:py-10">
           <div className="w-full md:w-1/2 flex items-center">
