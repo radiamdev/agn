@@ -6,7 +6,7 @@ import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import React from 'react'
 
-const ServiceSectionFive = () => {
+const ConsignationDesNavires = () => {
     const sectionRef = React.useRef<HTMLElement>(null)
     const containerRef = React.useRef<HTMLDivElement>(null)
 
@@ -81,4 +81,4 @@ const ServiceSectionFive = () => {
     )
 }
 
-export default ServiceSectionFive
+export default ConsignationDesNavires

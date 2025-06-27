@@ -34,15 +34,15 @@ export const headerLinkData: HeaderLinkType[] = [
 export const privacyHeaderData: HeaderLinkType[] = [
     {
         title: 'Politique de confidentialité',
-        url: '/privacyPolicy',
+        url: '/privacy-policy',
     },
     {
         title: 'Politique des cookies',
-        url: '/cookiesPolicy',
+        url: '/cookie-policy',
     },
     {
         title: 'Conditions d’utilisation',
-        url: '/termsOfUse',
+        url: '/terms-of-use',
     },
     {
         title: 'E--Commerce',
@@ -76,15 +76,15 @@ export const footerPrincipalLinksData: HeaderLinkType[] = [
 export const footerSecondaryLinksData: HeaderLinkType[] = [
     {
         title: 'Politique de confidentialité',
-        url: '/privacyPolicy',
+        url: '/privacy-policy',
     },
     {
         title: 'Politique des cookies',
-        url: '/cookiesPolicy',
+        url: '/cookie-policy',
     },
     {
         title: 'Conditions d’utilisation',
-        url: '/termsOfUse',
+        url: '/terms-of-use',
     },
     {
         title: 'E--Commerce',

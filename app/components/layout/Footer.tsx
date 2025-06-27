@@ -1,6 +1,5 @@
 import { FaArrowRightLong } from 'react-icons/fa6'
 import Container from '../common/Container'
-import Logo from '../icons/Logo'
 import { IoMailSharp } from 'react-icons/io5'
 import { TbWorld } from 'react-icons/tb'
 import { FaPhoneAlt } from 'react-icons/fa'
@@ -9,6 +8,7 @@ import {
     footerSecondaryLinksData,
 } from '@/data.global'
 import Link from 'next/link'
+import { Image } from '@mantine/core'
 
 function Footer() {
     const footerSocialMedia = [
@@ -41,7 +41,12 @@ function Footer() {
                     {/* links part  */}
                     <div className=" w-full grid grid-cols-1 gap-10 lg:grid-cols-4 lg:gap-0 border-b pb-10">
                         <div className="flex items-start flex-col gap-6 lg:gap-10">
-                            <Logo className="w-[90px] h-auto md:w-[150px]" />
+                            <Image
+                                src="/image/logo.webp"
+                                alt="logo"
+                                className="!w-[90px] !h-auto md:!w-[150px] relative z-10 "
+                            />
+
                             <p className="max-w-[250px] ">
                                 Votre partenaire de confiance pour des solutions
                                 innovantes en entrepreneuriat et investissement.

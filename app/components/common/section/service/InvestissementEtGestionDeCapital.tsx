@@ -31,7 +31,7 @@ const services = [
     },
 ]
 
-const ServiceSectionOne = () => {
+const InvestissementEtGestionDeCapital = () => {
     const containerRef = React.useRef<HTMLElement>(null)
     const cardContainerRef = React.useRef<HTMLDivElement>(null)
 
@@ -56,7 +56,7 @@ const ServiceSectionOne = () => {
     }, [])
 
     return (
-        <section ref={containerRef} className="w-screen bg-white">
+        <section ref={containerRef} className="w-full bg-white">
             <Container tag="section" className="space-y-4 py-6">
                 <div className="h-2 w-32 bg-secondary" />
                 <h2 className="text-black font-semibold text-2xl">
@@ -92,4 +92,4 @@ const ServiceSectionOne = () => {
     )
 }
 
-export default ServiceSectionOne
+export default InvestissementEtGestionDeCapital

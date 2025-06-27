@@ -62,7 +62,7 @@ const data = [
     },
 ]
 
-const ServiceSectionTwo = () => {
+const ConsultanceEnEntrepreneuriat = () => {
     const sectionRef = React.useRef<HTMLElement>(null)
     const cardContainerRef = React.useRef<HTMLDivElement>(null)
 
@@ -83,7 +83,7 @@ const ServiceSectionTwo = () => {
     ], [])
 
     return (
-        <section ref={sectionRef} className="w-screen bg-[#BF90008F]">
+        <section ref={sectionRef} className="w-full bg-[#BF90008F]">
             <Container tag="section" className="space-y-4 py-6">
                 <div className="h-2 w-32 bg-secondary" />
                 <h2 className="text-black font-semibold text-2xl">
@@ -138,7 +138,7 @@ const ServiceSectionTwo = () => {
                             </div>
                         </div>
                         {/* Illustration image */}
-                        <div className="absolute top-0 -right-25 w-xs h-auto hidden lg:block">
+                        <div className="absolute top-0 -right-40 w-xs h-auto hidden lg:block">
                             <Image
                                 src="/image/service/businessman.png"
                                 alt="illustration"
@@ -152,4 +152,4 @@ const ServiceSectionTwo = () => {
     )
 }
 
-export default ServiceSectionTwo
+export default ConsultanceEnEntrepreneuriat

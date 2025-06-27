@@ -1,13 +1,13 @@
 'use client'
 
+import { textRevealAnimation } from '@/data.global'
 import { useGSAP } from '@gsap/react'
 import { Image } from '@mantine/core'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import React from 'react'
-import { textRevealAnimation } from '@/data.global'
 
-const ServiceSectionThree = () => {
+const RepresentationCommerciale = () => {
     const sectionRef = React.useRef<HTMLElement>(null)
     const imageRef = React.useRef<HTMLImageElement>(null)
     const textRef = React.useRef<HTMLDivElement>(null)
@@ -35,42 +35,52 @@ const ServiceSectionThree = () => {
     }, [])
 
     return (
-        <section ref={sectionRef} className="bg-white lg:py-6 lg:px-0 p-4 flex flex-col lg:flex-row items-center relative">
+        <section ref={sectionRef} className="bg-white lg:py-6 lg:px-0 p-4 flex flex-col lg:flex-row-reverse items-center relative">
             <div className="w-full lg:w-[50%] flex-shrink-0">
                 <Image
-                    src="/image/service/import_export.jpg"
+                    src="/image/service/commerciale.jpg"
                     alt="icon"
                     className="!w-full !h-auto"
                     ref={imageRef}
                 />
             </div>
-            <div ref={textRef} className="w-full lg:w-[55%] bg-white shadow-xl space-y-6 lg:p-16 p-4 z-30 lg:absolute lg:top-1/2 lg:right-0 lg:transform lg:-translate-y-1/2">
+            <div ref={textRef} className="w-full lg:w-[55%] bg-white shadow-xl space-y-6 lg:p-16 p-4 z-30 lg:absolute lg:top-1/2 lg:left-0 lg:transform lg:-translate-y-1/2">
                 <div className="h-2 w-32 bg-secondary" />
                 <h2 className="text-black font-semibold text-2xl">
-                    Import-export
+                    Représentation commerciale
                 </h2>
                 <h1 className="text-secondary font-bold text-3xl">
-                    Le monde est votre marché.
+                    Développez votre marque, conquérez de nouveaux marchés.
                 </h1>
-                <p className="text-black/80 text-md text-justify">{`Simplifiez vos échanges internationaux grâce à notre expertise en logistique et en douane. Étendez votre activité au-delà des frontières avec notre service d’import-export. Nous vous assistons dans toutes les démarches logistiques, douanières et commerciales pour faciliter vos échanges internationaux en toute sécurité.`}</p>
 
                 <div className="space-y-3">
                     <div className="flex items-center gap-4">
-                        ✈️ <span className="font-semibold">Import</span>
+                        🏢{' '}
+                        <span className="font-semibold">
+                            {' '}
+                            Représentation des entreprises malagasy à Mahajanga
+                        </span>
                     </div>
                     <p className="text-black/80">
-                        Description : Entrée de marchandises dans le paysPrix :
-                        Variable selon la nature et le volume des marchandises
+                        Description : Représentation locale des entreprises
+                        malagasy dans la ville de Mahajanga. <br />
+                        Prix : 3 000 000 MGA
                     </p>
                 </div>
                 <div className="space-y-3">
                     <div className="flex items-center gap-4">
-                        🚢 <span className="font-semibold">Export</span>
+                        🌍{' '}
+                        <span className="font-semibold">
+                            {' '}
+                            Représentation des entreprises étrangères à
+                            Madagascar et aux Comores.
+                        </span>
                     </div>
                     <p className="text-black/80">
-                        Description : Sortie de marchandises hors du paysPrix :
-                        Variable selon la destination et la typologie des
-                        produits
+                        Description : Représentation internationale des
+                        entreprises étrangères dans les deux pays
+                        <br />
+                        Prix : 6 000 000 MGA
                     </p>
                 </div>
             </div>
@@ -78,4 +88,4 @@ const ServiceSectionThree = () => {
     )
 }
 
-export default ServiceSectionThree
+export default RepresentationCommerciale
