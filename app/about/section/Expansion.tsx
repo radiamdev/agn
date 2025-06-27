@@ -42,7 +42,7 @@ function Expansion() {
 
         {/* image part  */}
         <div ref={imageRef} className="w-full h-auto" >
-          <Image src={'/image/about/expansion.png'} alt="men in rush" />
+          <Image src={'/image/about/expansion.webp'} alt="men in rush" />
         </div>
 
         {/* text part  */}

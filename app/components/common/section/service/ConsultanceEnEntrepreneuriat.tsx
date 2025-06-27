@@ -140,7 +140,7 @@ const ConsultanceEnEntrepreneuriat = () => {
                         {/* Illustration image */}
                         <div className="absolute top-0 -right-40 w-xs h-auto hidden lg:block">
                             <Image
-                                src="/image/service/businessman.png"
+                                src="/image/service/businessman.webp"
                                 alt="illustration"
                                 className="!w-full !h-auto"
                             />

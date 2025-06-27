@@ -42,7 +42,7 @@ function IncitationSection() {
 
       {/* image  */}
       <div ref={leftSideRef} className="w-full h-auto" >
-        <Image src={'/image/home/incitationSection.png'} alt="grout image" />
+        <Image src={'/image/home/incitationSection.webp'} alt="grout image" />
       </div>
 
       {/* right side  */}

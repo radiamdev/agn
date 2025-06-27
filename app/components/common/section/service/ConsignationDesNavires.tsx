@@ -71,7 +71,7 @@ const ConsignationDesNavires = () => {
                 </div>
                 <div className="lg:w-[30%] w-full flex items-end justify-end">
                     <Image
-                        src="/image/service/fine.png"
+                        src="/image/service/fine.webp"
                         alt="icon"
                         className="!w-sm !h-auto"
                     />

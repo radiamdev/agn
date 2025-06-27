@@ -97,7 +97,7 @@ function Activity() {
 
         {/* men image  */}
         <div ref={imageRef} className="absolute w-[35%] h-auto bottom-0 left-1/2 -translate-x-1/2 hidden lg:block " >
-          <Image src={'/image/about/activity-men.png'} alt="men image" />
+          <Image src={'/image/about/activity-men.webp'} alt="men image" />
         </div>
       </Container>
     </div>

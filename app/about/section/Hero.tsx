@@ -45,7 +45,7 @@ function Hero() {
 
         {/* right side  */}
         <div ref={rightSideRef} className="w-full h-auto" >
-          <Image src={'/image/about/hero-about.png'} alt="image" />
+          <Image src={'/image/about/hero-about.webp'} alt="image" />
         </div>
       </Container>
     </div>

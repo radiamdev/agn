@@ -14,7 +14,7 @@ function Hero() {
         </div>
 
         <div className="w-full h-auto" >
-          <Image src={'/image/termOfUse/term-hero.png'} alt="hands image" />
+          <Image src={'/image/termOfUse/term-hero.webp'} alt="hands image" />
         </div>
       </Container>
     </div>

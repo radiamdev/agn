@@ -38,7 +38,7 @@ const RepresentationCommerciale = () => {
         <section ref={sectionRef} className="bg-white lg:py-6 lg:px-0 p-4 flex flex-col lg:flex-row-reverse items-center relative">
             <div className="w-full lg:w-[50%] flex-shrink-0">
                 <Image
-                    src="/image/service/commerciale.jpg"
+                    src="/image/service/commerciale.webp"
                     alt="icon"
                     className="!w-full !h-auto"
                     ref={imageRef}

@@ -58,10 +58,10 @@ function WhoAryWe() {
         {/* right side  */}
         <div ref={imageRef} className="relative h-[600px] " >
           <div className="absolute top-0 left-0 w-[50%] h-auto " >
-            <Image src={'/image/about/whoAreWe-1.png'} alt="meeting image" />
+            <Image src={'/image/about/whoAreWe-1.webp'} alt="meeting image" />
           </div>
           <div className="absolute bottom-0 right-0 w-[55%] h-auto " >
-            <Image src={'/image/about/whoAreWe-2.png'} alt="meeting image" />
+            <Image src={'/image/about/whoAreWe-2.webp'} alt="meeting image" />
           </div>
         </div>
       </Container>

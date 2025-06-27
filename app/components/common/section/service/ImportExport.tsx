@@ -38,7 +38,7 @@ const ImportExport = () => {
         <section ref={sectionRef} className="bg-white lg:py-6 lg:px-0 p-4 flex flex-col lg:flex-row items-center relative">
             <div className="w-full lg:w-[50%] flex-shrink-0">
                 <Image
-                    src="/image/service/import_export.jpg"
+                    src="/image/service/import_export.webp"
                     alt="icon"
                     className="!w-full !h-auto"
                     ref={imageRef}
