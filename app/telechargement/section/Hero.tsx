@@ -25,7 +25,7 @@ function Hero() {
       {/* <div className=''  > */}
       {/* image  */}
       <div className="absolute w-full h-full top-0 left-0" >
-        <Image src={'/image/telechargement/hero.png'} alt="contact image" className="w-full h-full" />
+        <Image src={'/image/telechargement/hero.webp'} alt="contact image" className="w-full h-full" />
       </div>
       <div className="absolute w-full h-full top-0 left-0 bg-primary/70"></div>
 

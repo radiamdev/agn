@@ -7,7 +7,7 @@ function Hero() {
     <div className='min-h-[500px] mx-auto flex items-center justify-center text-white relative mb-10'  >
       {/* image  */}
       <div className="absolute w-full h-full top-0 left-0" >
-        <Image src={'/image/contact/hero-bg.png'} alt="contact image" className="w-full h-full" />
+        <Image src={'/image/contact/hero-bg.webp'} alt="contact image" className="w-full h-full" />
       </div>
       <div className="absolute w-full h-full top-0 left-0 bg-primary/50"></div>
 

@@ -56,7 +56,7 @@ export default function QuestAns3() {
                     </div>
                     <div className="w-full md:w-1/2 space-y-5">
                         <div className="flex justify-end">
-                            <img ref={image} src="/image/question/quest3.png" alt="quest3" width="500px" height="412px" />
+                            <img ref={image} src="/image/question/quest3.webp" alt="quest3" width="500px" height="412px" />
                         </div>
                         <Timeline active={1} lineWidth={1} bulletSize={16} color="#bf9000">
                             <TimelineItem title="Les investisseurs peuvent-ils fournir des témoignages ou des avis d'expérience sur leurs investissements au sein de l'entreprise AGN ?">

@@ -55,7 +55,7 @@ function Hero() {
         {/* right side  */}
         <Image
           ref={rightSideRef}
-          src={'/image/home/home-hero.png'}
+          src={'/image/home/home-hero.webp'}
           alt='hero image'
           className='w-full h-auto'
         />

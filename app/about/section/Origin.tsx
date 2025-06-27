@@ -52,10 +52,10 @@ function Origin() {
         {/* image side  */}
         <div ref={imageRef} className="relative" >
           <div className="h-full w-[80%] " >
-            <Image src={'/image/about/origin-1.png'} alt="meeting image" />
+            <Image src={'/image/about/origin-1.webp'} alt="meeting image" />
           </div>
           <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[120px] md:w-[220px] h-auto " >
-            <Image src={'/image/about/origin-2.png'} alt="meeting image" />
+            <Image src={'/image/about/origin-2.webp'} alt="meeting image" />
           </div>
         </div>
 

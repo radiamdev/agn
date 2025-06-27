@@ -64,14 +64,14 @@ export default function QuestAns() {
               </TimelineItem>
             </Timeline>
           </div>
-          <div className="hidden md:block md:w-1/2 flex justify-end">
-            <img src="/image/question/quest1.png" alt="Image1" height="450px" width="450px" />
+          <div className="hidden md:w-1/2 md:flex justify-end">
+            <img src="/image/question/quest1.webp" alt="Image1" height="450px" width="450px" />
           </div>
         </div>
 
         <div ref={sectionTwo} className="flex w-full mt-5">
-          <div className="hidden md:block md:w-1/2 flex justify-start">
-            <img src="/image/question/quest2.png" alt="Image2" height="500px" width="500px" />
+          <div className="hidden md:w-1/2 md:flex justify-start">
+            <img src="/image/question/quest2.webp" alt="Image2" height="500px" width="500px" />
           </div>
           <div className="w-full md:w-1/2 flex items-center">
             <Timeline active={1} lineWidth={1} bulletSize={16} color="#bf9000">

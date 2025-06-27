@@ -8,6 +8,7 @@ import Menu from '../display/Menu'
 import Logo from '../icons/Logo'
 import { useState } from 'react'
 import { usePathname } from 'next/navigation'
+import { Image } from '@mantine/core'
 
 function Header() {
     const [isClicked, setIsClicked] = useState(false)
@@ -26,10 +27,14 @@ function Header() {
         <div className="w-screen  bg-primary fixed top-0 left-0 z-50">
             <Container
                 tag="header"
-                className="flex items-center justify-between relative "
+                className="flex items-center justify-between relative  py-3"
             >
                 <div>
-                    <Logo className="w-[90px] h-auto md:w-[150px] relative z-10 " />
+                    <Image
+                        src="/image/logo.webp"
+                        alt="logo"
+                        className="!w-[90px] !h-auto md:!w-[150px] relative z-10 "
+                    />
                 </div>
                 <ul
                     className={`flex items-center justify-center gap-5 lg:gap-3 text-white absolute lg:static top-0  h-screen lg:h-fit w-screen lg:w-fit bg-primary flex-col lg:flex-row  ${

@@ -52,7 +52,7 @@ const HeroService = () => {
                 {/* Right section */}
                 <div ref={rightSideRef} className="lg:w-1/2 w-full flex items-end justify-center pt-24">
                     <Image
-                        src="/image/service/hero_illustration.png"
+                        src="/image/service/hero_illustration.webp"
                         alt="hero image"
                         className="!w-sm !h-auto !object-contain"
                     />

@@ -24,7 +24,7 @@ export default function Hero() {
 
     }, [])
     return (
-        <section className="bg-[url('/image/question/hero.png')] bg-cover bg-center md:h-[508px] mt-[70px] md:mt-[150px]">
+        <section className="bg-[url('/image/question/hero.webp')] bg-cover bg-center md:h-[508px] mt-[70px] md:mt-[150px]">
             <Container>
                 <div ref={textRef} className="space-y-12  py-[40px]">
                     <div className="space-y-6">
