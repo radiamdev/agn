@@ -1,3 +1,4 @@
+import { MailType } from '@/type';
 import React from 'react'
 
 export interface HeaderLinkType {
