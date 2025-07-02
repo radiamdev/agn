@@ -6,7 +6,7 @@ const nextConfig: NextConfig = {
         optimizePackageImports: ['@mantine/core', '@mantine/hooks'],
     },
     output: 'export',
-    trailingSlash: true
+    // trailingSlash: true
 }
 
 export default nextConfig

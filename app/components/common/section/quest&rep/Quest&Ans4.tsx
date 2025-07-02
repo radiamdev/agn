@@ -81,7 +81,6 @@ export default function QuestAns4() {
                         desc={desc4}
                     ></Forme>
                 </div>
-
             </section>
         </SeeMore>
     )
