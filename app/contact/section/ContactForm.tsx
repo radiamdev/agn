@@ -1,7 +1,6 @@
 'use client'
 
 import { Formik, Form } from 'formik'
-import * as Yup from 'yup'
 import Input from '@/app/components/common/Input'
 import TextArea from '@/app/components/common/TextArea'
 import Button from '@/app/components/common/Button'
@@ -28,6 +27,7 @@ const ContactForm = () => {
                     resetForm()
                 } catch (error) {
                     toast.error('Erreur lors de l’envoi')
+                    console.log(error)
                 }
             }}
         >
