@@ -1,9 +1,6 @@
 'use client'
 
 import { FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa"
-import Button from "../../Button"
-import Input from "../../Input"
-import TextArea from "../../TextArea"
 import { InformationDataType } from "@/type"
 import { IoMailSharp } from "react-icons/io5"
 import { TbWorld } from "react-icons/tb"
@@ -12,6 +9,7 @@ import React from "react"
 import { useGSAP } from "@gsap/react"
 import gsap from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
+import ContactForm from "@/app/contact/section/ContactForm"
 
 function ContactSection() {
 
@@ -73,7 +71,7 @@ function ContactSection() {
     <section ref={sectionRef} className="w-full flex flex-col items-center justify-center gap-10  relative lg:p-8 xl:p-10 pb-10 ">
       {/* title  */}
       <h1 className="pt-8 text-3xl font-bold relative w-fit" >
-        <span className="absolute h-2 w-[100px] bg-secondary top-0 left-0 " ></span>
+        <span className="absolute h-2 w-[100px] bg-secondary top-0 left-0 " ></span> {' '}
         Contactez
         <span className="font-normal" >  nous</span>
       </h1>
@@ -82,18 +80,16 @@ function ContactSection() {
       {/* form and contact  */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center lg:px-10 xl:px-20 relative z-10" >
 
-        <form ref={leftSideRef} className="w-full flex flex-col gap-5  " >
-          <Input placeholder="name" />
-          <Input placeholder="E-mail" />
-          <TextArea placeholder="Message" />
-          <Button label="Envoyer" variant='primary' className="w-fit" />
-        </form>
+
+        <div className="w-full">
+          <ContactForm />
+        </div>
 
         <div ref={rightSideRef} className="bg-black text-white px-10 py-10 flex flex-col gap-10" >
           <h4 className="text-2xl font-bold text-center" > Information </h4>
           {
-            informationData.map((item, id) => (
-              <div key={id} className="flex flex-col md:flex-row gap-5 items-center" >
+            informationData.map((item) => (
+              <div key={item.text} className="flex flex-col md:flex-row gap-5 items-center" >
                 <span className="bg-white p-2 h-fit rounded-full " > {item.icon} </span>
                 {item.isLink ? (
                   <Link href={item.href as string} className="hover:cursor-pointer hover:text-secondary transition-colors underline font-light" > <p> {item.text} </p> </Link>
