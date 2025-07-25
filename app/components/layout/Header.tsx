@@ -19,7 +19,8 @@ function Header() {
     pathname === '/privacy-policy' ||
     pathname === '/cookie-policy' ||
     pathname === '/terms-of-use' ||
-    pathname === '/ecommerce'
+    pathname === '/partner' ||
+    pathname === '/legal-mention'
   ) return
 
   return (

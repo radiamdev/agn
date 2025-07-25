@@ -6,6 +6,8 @@ import {
     PaymentType,
     TermOfUseSectionType,
     TestimonialType,
+    LegalMentionProps0,
+    LegalMentionProps1
 } from './type'
 
 export const headerLinkData: HeaderLinkType[] = [
@@ -45,8 +47,12 @@ export const privacyHeaderData: HeaderLinkType[] = [
         url: '/terms-of-use',
     },
     {
-        title: 'E--Commerce',
-        url: '/ecommerce',
+        title: 'Partenaires',
+        url: '/partner',
+    },
+    {
+        title: 'Mentions Légales',
+        url: '/legal-mention',
     },
 ]
 
@@ -87,8 +93,12 @@ export const footerSecondaryLinksData: HeaderLinkType[] = [
         url: '/terms-of-use',
     },
     {
-        title: 'E--Commerce',
-        url: '/ecommerce',
+        title: 'Partenaires',
+        url: '/partner',
+    },
+    {
+        title: 'Mentions Légales',
+        url: '/legal-mention',
     },
 ]
 
@@ -310,3 +320,76 @@ export const textRevealAnimation = {
     y: '100%',
     clipPath: 'inset(0 0 100% 0)',
 }
+
+export const legalmention0: LegalMentionProps0[] = [
+    {   
+        number0: '1',
+        title0: 'Éditeur du site',
+        description0: [
+                     'Le présent site est édité par : AGENCE NASSER-AGN',
+                      'Forme juridique : Entreprise individuelle',
+                      'Siège social : Lot 0202 K 0062 Antanimasaja Mahajanga, Madagascar',
+                      'Lieu d’exploitation : Box N°16 Dame de cœur center Mangarivotra Mahajanga, Madagascar',
+                      'Email : service.client@agencenasser.com',
+                      'Site web : www.agencenasser.comTéléphone : +261 32 02 234 43 / +261 33 72 450 77 / +261 34 02 567 25',
+                      'STAT : 74908 41 2017 0 00865',
+                      'NIF : 5002818832',
+                      'RCS : Mahajanga 2018 A 00016',
+                      'Directeur de la publication : NASSER Saïd Mmadi, en sa qualité de fondateur et représentant légal.'
+                      ]
+    },
+    { 
+        number0: '3',
+        title0: 'Conception et développement',
+        description0: [
+                     'Développement web réalisé par : RAMBININTSOA Safidy Nirina',
+                      'Adresse : 176 Cité Akany Firaisana Itaosy',
+                      'Email : rambinintsoasafidy.az@gmail.com',
+                      'Site web : www.developer.mg',
+                      'Téléphone : +261 38 38 161 78',
+                      ]
+    },
+    { 
+        number0: '5',
+        title0: 'Données personnelles',
+        description0: [' Pour connaître nos engagements en matière de confidentialité et de traitement de vos données personnelles, veuillez consulter notre [politique de Confidentialité] .']
+    },
+    { 
+        number0: '7',
+        title0: 'Responsabilité',
+        description0: ['L’AGENCE NASSER-AGN s’efforce d’assurer l’exactitude des informations publiées sur son site. Toutefois, l’entreprise ne saurait être tenue responsable des erreurs, omissions ou résultats qui pourraient être obtenus par un usage inapproprié de ces informations.']
+    },
+]   
+
+export const legalmention1: LegalMentionProps1[] = [
+    
+    { 
+        number: '2',
+        title: 'Hébergement du site',
+        description: [
+                     'Le site est hébergé par : Société MADANET INFO',
+                      'Adresse : Lot CM27 Ter Mandrosoa Ilafy 101, Antananarivo Madagascar',
+                      'E-mail : contact@madanet.info',
+                      'Site web : www.madanet.info',
+                      'Téléphone : +261 32 43 609 75 / 038 67 720 21',
+                      ]
+    },
+    { 
+        number: '4',
+        title: 'Propriété intellectuelle',
+        description: [
+                     'L’ensemble du contenu du site (textes, images, graphismes, logo, icônes, vidéos, etc..) est la propriété exclusive de l’AGENCE NASSER-AGN et/ou de ses partenaires.',
+                      'Toute reproduction, représentation, diffusion ou exploitation du contenu, même partielle, est strictement interdite sans autorisation écrite préalable.',
+                      ]
+    },
+    { 
+        number: '6',
+        title: 'Cookies',
+        description: ['Pour connaître nos engagements en matière de confidentialité et de traitement de vos données personnelles, veuillez consulter notre [Politique de Confidentialité].']
+    },
+    { 
+        number: '8',
+        title: 'Droit applicable',
+        description: ['Le présent site est régi par le droit malgache. En cas de litige, les juridictions compétentes seront celles du siège de l’entreprise, sauf disposition légale impérative contraire..']
+    }
+]   

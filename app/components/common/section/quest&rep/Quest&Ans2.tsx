@@ -46,13 +46,13 @@ export default function QuestAns2() {
                 <div ref={leftSide} className="w-full md:flex">
                     <div className="w-full md:w-1/2">
                         <Timeline active={2} lineWidth={1} bulletSize={16} color="#bf9000">
-                            <TimelineItem title="Comment l'entreprise AGN garantit-elle la sécurité des fonds et des données des investisseurs ?">
+                            <TimelineItem className="leading-relaxed" title="Comment l'entreprise AGN garantit-elle la sécurité des fonds et des données des investisseurs ?">
                                 <p className="font-light text-gray-500 mt-5"> {desc} </p>
                             </TimelineItem>
-                            <TimelineItem title="Quelles mesures de sécurité sont mises en place par l'entreprise AGN ?" >
+                            <TimelineItem className="leading-relaxed" title="Quelles mesures de sécurité sont mises en place par l'entreprise AGN ?" >
                                 <p className="font-light text-gray-500 mt-5"> {desc1} </p>
                             </TimelineItem>
-                            <TimelineItem title="L'entreprise AGN fournit-elle des conseils juridiques ou des recommandations financières aux investisseurs ?">
+                            <TimelineItem className="leading-relaxed" title="L'entreprise AGN fournit-elle des conseils juridiques ou des recommandations financières aux investisseurs ?">
                                 <p className="font-light text-gray-500 mt-5"> {desc2} </p>
                             </TimelineItem>
                         </Timeline>
@@ -60,13 +60,13 @@ export default function QuestAns2() {
 
                     <div ref={rightSide} className="w-full pt-6 md:pt-0 md:w-1/2">
                         <Timeline active={2} lineWidth={1} bulletSize={16} color="#bf9000">
-                            <TimelineItem title="Qu'advient-il de mes fonds en cas de faillite ou d'insolvabilité de l'entreprise AGN ?">
+                            <TimelineItem className="leading-relaxed" title="Qu'advient-il de mes fonds en cas de faillite ou d'insolvabilité de l'entreprise AGN ?">
                                 <p className="font-light text-gray-500 mt-5"> {desc3} </p>
                             </TimelineItem>
-                            <TimelineItem title="Quel est le processus de résolution des litiges survenant sur l'investissement au sein de l'entreprise AGN ?" >
+                            <TimelineItem className="leading-relaxed" title="Quel est le processus de résolution des litiges survenant sur l'investissement au sein de l'entreprise AGN ?" >
                                 <p className="font-light text-gray-500 mt-5"> {desc4} </p>
                             </TimelineItem>
-                            <TimelineItem title="L'entreprise AGN propose-t-elle des ressources d'éducation financière pour les investisseurs?">
+                            <TimelineItem className="leading-relaxed" title="L'entreprise AGN propose-t-elle des ressources d'éducation financière pour les investisseurs?">
                                 <p className="font-light text-gray-500 mt-5"> {desc5} </p>
                             </TimelineItem>
                         </Timeline>
