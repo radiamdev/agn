@@ -77,3 +77,20 @@ export interface EcommerceSectionProps {
     imageOne: string
     imageTwo: string
 }
+
+export interface LegalMentionProps0 {
+    number0?: string,
+    title0?: string,
+    description0?: string[]
+}
+
+export interface LegalMentionProps1 {
+    number?: string,
+    title?: string,
+    description?: string[]
+}
+
+export interface LegalMentionProps {
+    left?: LegalMentionProps0,
+    right?: LegalMentionProps1
+}
