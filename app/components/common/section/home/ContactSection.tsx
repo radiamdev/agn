@@ -30,9 +30,9 @@ function ContactSection() {
     },
     {
       icon: <IoMailSharp size={30} color="black" />,
-      text: "serviceclinet@agence.com",
+      text: "serviceclient@agence.com",
       isLink: true,
-      href: 'mailTo:serviceclinet@agence.com'
+      href: 'mailTo:serviceclient@agence.com'
     },
     {
       icon: <TbWorld size={30} color="black" />,
